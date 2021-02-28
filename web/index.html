@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body, html {
+             height: 100vh;
+             margin: 0;
+            }
+            
+            #painel_externo {
+                height: 100vh;
+                width: 100%;
+                background-color: #c5e0e0;
+            }
+            #painel_interno {
+                width: 50%;
+                height: 100vh;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+            }
+            #titulo {
+                width: 100%;
+                height: 10%;
+                background-color: #c4c4c4;
+                font-size: 30px;
+                text-align: center;
+                padding-top: 20px;
+                box-sizing: border-box;
+            }
+            
+            #painel_campos {
+                height: calc(90% - 20px);
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            #painel_campos input[type=text] {
+                background-color: #c4c4c4;
+                border: 0px;
+                height: 4%;
+                margin-top: 10px;
+                width: calc(100% - 40px);
+            }
+            
+            #panel_botoes {
+                margin-top: 30px;
+                width: calc(100% - 40px);
+                float: left;
+            }
+            
+            #panel_botoes input {
+                background-color: #c4c4c4;
+                width: 100px;
+                height: 25px;
+                border-radius: 5px;
+                border: 0px;
+                box-sizing: border-box;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <div id="painel_externo">
+            <div id="painel_interno">
+                <div id="titulo"> Cadastro de cliente </div>
+                <div id="painel_campos">
+                    <input type="text" name="nome" value="" size="50" placeholder="Informe nome" />
+                    <input type="text" name="emial" value="" size="50" placeholder="Informe email" />
+                    <input type="text" name="cpf" value="" size="50" placeholder="Informe cpf" />
+                    <input type="text" name="cep" value="" size="50" placeholder="Informe CEP" />
+                    <input type="text" name="rua" value="" size="50" placeholder="rua" />
+                    <input type="text" name="bairro" value="" size="50" placeholder="bairro" />
+                    <input type="text" name="cidade" value="" size="50" placeholder="cidade" />
+                    <input type="text" name="salario" value="" size="50" placeholder="salario" />
+                    <input type="text" name="valoremprestimo" value="" size="50" placeholder="valor do imprestimo" />
+                    <input type="text" name="numeroparcela" value="" size="50" placeholder="numero de parcelas" />
+                    <div id ="panel_botoes">
+                        <input type="button" style="float: left" value="Salvar" name="salvar" />
+                        <input type="button" style="float: right" value="Salvar" name="cancelar" />
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
